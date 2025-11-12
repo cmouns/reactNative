@@ -9,7 +9,7 @@ import React from "react";
 import { AppColors } from "@/constants/theme";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Logo from "./Logo";
-import { AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign, Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
 const HomeHeader = () => {
@@ -23,7 +23,7 @@ const HomeHeader = () => {
             style={styles.searchButton}
             onPress={() => router.push("/(tabs)/search")}
           >
-            <AntDesign name="search" size={20} color={AppColors.primary[700]} />
+            <Ionicons name="search" size={20} color={AppColors.primary[700]} />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.searchButton}
